@@ -1,18 +1,19 @@
-//Made by: Aiden McLeod
-//Made in: March 2022
+/* Created by: Aiden McLeod
+* Created on: March 2022
+* This file contains the JS for index.html
+*/
 
 'use strict'
 /**
- * This function calculates area of a sphere.
+ * This function calculates the farenheit.
  */
-function calculate() {
+function calculate () {
   // input
-  const radius = parseInt(document.getElementById('radius').value)
+  const fahrenheit = parseInt(document.getElementById('fahrenheit').value)
 
   // process
-
-  const volume = (4/3)* Math.PI * Math.pow(radius, 3);
+  const celsius = (fahrenheit - 32) * 5 / 9
 
   // output
-  document.getElementById('volume').innerHTML = 'Volume is: ' + volume.toFixed(2) + ' cm³'
+  document.getElementById('celsius').innerHTML = 'Celsius is: ' + celsius.toFixed(0) + '°'
 }
